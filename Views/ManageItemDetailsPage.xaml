@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="LibraryProject.Views.ManageItemDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryProject.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="800" Width="1500">
+
+    <Canvas>
+        <Image Source="/Assets/LibraryPicture.jpg" Height="870" Canvas.Left="-38" Width="1576" Canvas.Top="-6" Canvas.ZIndex="0" Visibility="Visible"/>
+        <Image Source="/Assets/Bookinfo.png" Canvas.Left="30" Canvas.Top="-90" Visibility="Visible" />
+        <TextBox Name="TitleField" Canvas.Left="495" TextWrapping="Wrap" Text="Item Name" FontSize="40" TextAlignment="Center" Canvas.Top="117" Height="66" Width="506" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Canvas.Left="348" TextWrapping="Wrap" Text="Author/Company:" FontSize="22" TextAlignment="Left" Canvas.Top="232" Height="40" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBox Name="AuthorAndCompanyField" Canvas.Left="527" TextWrapping="Wrap" Text="      " FontSize="18" TextAlignment="Left" Canvas.Top="235" Height="40" Width="193" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Canvas.Left="348" TextWrapping="Wrap" Text="Price:" FontSize="22" TextAlignment="Left" Canvas.Top="285" Height="40" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBox Name="PriceField" Canvas.Left="411" TextWrapping="Wrap" Text="      " FontSize="18" TextAlignment="Left" Canvas.Top="280" Height="40" Width="253" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible" BeforeTextChanging="NumbersOnly_BeforeTextChanging" TextChanging="NumbersOnly_TextChanging"/>
+        <TextBlock Canvas.Left="348" TextWrapping="Wrap" Text="Published:" FontSize="22" TextAlignment="Left" Canvas.Top="335" Height="40" Width="107" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <DatePicker Name="PublishedField" Canvas.Left="452" Canvas.Top="335" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="348" TextWrapping="Wrap" Text="Genere:" FontSize="22" TextAlignment="Left" Canvas.Top="385" Height="40" Width="253" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <ComboBox Name="GenreField" Canvas.Left="452" Canvas.Top="388" Width="109">
+            <ComboBoxItem Content="Action"/>
+            <ComboBoxItem Content="Comedy"/>
+            <ComboBoxItem Content="Drama"/>
+            <ComboBoxItem Content="Fantasy"/>
+            <ComboBoxItem Content="Kids"/>
+            <ComboBoxItem Content="News"/>
+            <ComboBoxItem Content="Romantic"/>
+        </ComboBox>
+        <TextBlock Canvas.Left="348" TextWrapping="Wrap" Text="Days of Rent:" FontSize="22" TextAlignment="Left" Canvas.Top="436" Height="40" Width="253" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBox Name="DaysOfRentField" Canvas.Left="480" TextWrapping="Wrap" Text="      " FontSize="18" TextAlignment="Left" Canvas.Top="436" Height="40" Width="253" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"  BeforeTextChanging="NumbersOnly_BeforeTextChanging" TextChanging="NumbersOnly_TextChanging"/>
+        <TextBlock Canvas.Left="348" TextWrapping="Wrap" Text="Quantity:" FontSize="22" TextAlignment="Left" Canvas.Top="485" Height="40" Width="97" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBox Name="QuantityField" Canvas.Left="445" TextWrapping="Wrap" Text="      " FontSize="18" TextAlignment="Left" Canvas.Top="489" Height="40" Width="253" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"  BeforeTextChanging="NumbersOnly_BeforeTextChanging" TextChanging="NumbersOnly_TextChanging"/>
+        <TextBlock Canvas.Left="831" TextWrapping="Wrap" Text="Image File Path:" FontSize="22" TextAlignment="Left" Canvas.Top="235" Height="40" Width="253" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"/>
+        <Button Name="AddImageButton" Content="Add Image" FontSize="20" CornerRadius="2" Canvas.Left="856" Canvas.Top="189" Canvas.ZIndex="3" Visibility="Visible" VerticalAlignment="Top" Click="AddImageButton_Click"/>
+        <TextBlock Name="ImageFilePath" Canvas.Left="1012" TextWrapping="Wrap" Text="      " FontSize="18" TextAlignment="Left" Canvas.Top="235" Height="40" Width="193" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Canvas.Left="827" TextWrapping="Wrap" Text="Status:" FontSize="22" TextAlignment="Left" Canvas.Top="346" Height="40" Width="76" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Name="StatusField" Canvas.Left="905" TextWrapping="Wrap" Text="Rented" FontSize="18" TextAlignment="Left" Canvas.Top="351" Height="27" Width="193" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Canvas.Left="827" TextWrapping="Wrap" Text="Rent Date:" FontSize="19" TextAlignment="Left" Canvas.Top="379" Height="40" Width="98" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Name="RentDateField" Canvas.Left="923" TextWrapping="Wrap" Text="12/04/2023" FontSize="18" TextAlignment="Left" Canvas.Top="381" Height="27" Width="145" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Canvas.Left="827" TextWrapping="Wrap" Text="The Date Of Return:" FontSize="19" TextAlignment="Left" Canvas.Top="409" Height="40" Width="180" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="ReturnDateField" Canvas.Left="997" TextWrapping="Wrap" Text="19/04/2023" FontSize="18" TextAlignment="Left" Canvas.Top="410" Height="27" Width="145" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <Image Name="ImageProduce" Source="/Assets/BookExample.jpg" Canvas.Left="1065" Canvas.Top="250" Height="150" Width="162" RenderTransformOrigin="0.772,0.728" Visibility="Visible" />
+        <TextBlock Canvas.Left="827" TextWrapping="Wrap" Text="Is Available:" FontSize="22" TextAlignment="Left" Canvas.Top="447" Height="40" Width="124" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Name="IsAvailableField" Canvas.Left="961" TextWrapping="Wrap" Text="" FontSize="22" TextAlignment="Left" Canvas.Top="447" Height="40" Width="136" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <Button Name="DeleteButton" Content="Delete item" Background="#FFFF5E42" FontSize="20" CornerRadius="2" Canvas.Left="871" Canvas.Top="554" Canvas.ZIndex="3" Visibility="Visible" Click="DeleteButton_Click"/>
+        <Button Content="Save Details" Background="#FFA6CF79" FontSize="20" CornerRadius="2" Canvas.Left="1082" Canvas.Top="554" Canvas.ZIndex="3" Visibility="Visible" Click="SaveButton_Click"/>
+        <Button Name="ButtonBackPage"  Content="Back To Menu" Background="Wheat" FontSize="20" CornerRadius="2" Canvas.Left="336" Canvas.Top="546" Canvas.ZIndex="3"  Visibility="Visible" Click="ButtonBackPage_Click"/>
+
+        <Rectangle Name="MessageBackGround" Height="484" Canvas.Left="400" Stroke="Black"  Canvas.Top="187" Width="700" Canvas.ZIndex="4" FocusVisualSecondaryBrush="White" Fill="#FDA8F04E" Visibility="Collapsed"/>
+        <TextBlock Name="MessageContent" Height="135" Canvas.Left="537" FontWeight="Bold" TextAlignment="Center" FontSize="20" Text="The Details Have Been Saved!" Canvas.ZIndex="8" Canvas.Top="386" Width="403" HorizontalAlignment="Center" Visibility="Collapsed"/>
+        <Button Name="MessageConfirmButton" BorderBrush="#DB000000" Background="#FFDCFDC8" Content="Accept" Canvas.Left="701" Canvas.Top="544" Canvas.ZIndex="5" FontSize="13" Height="32" Width="77" Visibility="Collapsed" Click="MessageConfirmButton_Click"/>
+
+    </Canvas>
+</Page>

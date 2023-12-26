@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="LibraryProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="800" Width="1500">
+
+    <Canvas Name="AllPage">
+        <Image Source="/Assets/LibraryStartPage.jpg" Height="1000" Width="1700" Canvas.ZIndex="-1" Canvas.Left="-111" Canvas.Top="-200" Visibility="Visible"/>
+        <Rectangle Name="MainPageYellowBackGround" Height="484" Canvas.Left="400" Stroke="Black"  Canvas.Top="187" Width="700" Canvas.ZIndex="0" FocusVisualSecondaryBrush="White" Fill="#B2FFD66C" Visibility="Visible"/>
+        <TextBlock Name="MainPageTitle" Height="70" Canvas.Left="497" TextAlignment="Center" FontSize="40" Text="Welcome to The Library!" Canvas.Top="234" Width="498" Foreground="Black" Visibility="Visible"/>
+        <TextBlock Name="MainPageLogInTitle" Height="31" Canvas.Left="696" TextAlignment="Center" Text="Log-in:" FontSize="19" Canvas.Top="323" Width="91" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="MainPageTitleUserName" Height="27" Canvas.Left="561" FontWeight="Bold" TextAlignment="Center" Text="Username:" Canvas.Top="381" Width="79" HorizontalAlignment="Center" Visibility="Visible"/>
+        <TextBox Name="MainPageLogInUserName" Height="30" Canvas.Left="650" Text="Write Here" Canvas.Top="375" Width="200" HorizontalAlignment="Center" Visibility="Visible" GotFocus="TextBox_GotFocus"/>
+        <TextBlock Name="MainPageTitlePassword" Height="27" Canvas.Left="561" FontWeight="Bold" TextAlignment="Center" Text="Password:" Canvas.Top="444" Width="79" HorizontalAlignment="Center" Visibility="Visible"/>
+        <TextBox Name="MainPageLogInPassword" Height="30" Canvas.Left="650" Text="Write Here" Canvas.Top="444" Width="200" HorizontalAlignment="Center" Visibility="Visible" GotFocus="TextBox_GotFocus"/>
+        <Button Name="MainPageLogInButton" BorderBrush="#DB000000" Background="Wheat" Content="Log In" Canvas.Left="721" Canvas.Top="505" FontSize="9" Height="27" Width="58" HorizontalAlignment="Center" Visibility="Visible" Click="MainPageLogInButton_Click"/>
+        <Button Name="MainPageSignInButton" Content="To Sign Up Click Here!!" Canvas.Left="672" Canvas.Top="562" Background="#42FFFFFF" HorizontalAlignment="Center" Visibility="Visible" Click="MainPageSignInButton_Click"/>
+
+        <Rectangle Name="MessageBackGround" Height="484" Canvas.Left="400" Stroke="Black"  Canvas.Top="187" Width="700" Canvas.ZIndex="4" FocusVisualSecondaryBrush="White" Fill="#FDF0BA4E" Visibility="Collapsed"/>
+        <TextBlock Name="MessageContent" Height="146" Canvas.Left="434" FontWeight="Bold" TextAlignment="Center" FontSize="20" Text="Something went wrong! please check your details." Canvas.ZIndex="8" Canvas.Top="375" Width="638" HorizontalAlignment="Left" Visibility="Collapsed" VerticalAlignment="Center"/>
+        <Button Name="MessageConfirmButton" BorderBrush="#DB000000" Background="#FFDCFDC8" Content="Accept" Canvas.Left="701" Canvas.Top="544" Canvas.ZIndex="5" FontSize="13" Height="32" Width="77" Visibility="Collapsed" Click="MessageConfirmButton_Click"/>
+
+    </Canvas>
+</Page>

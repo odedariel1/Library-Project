@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="LibraryProject.Views.ManageMemberAccountPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryProject.Model"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="800" Width="1500">
+
+    <Canvas>
+        <Image Source="/Assets/LibraryPicture.jpg" Height="870" Canvas.Left="-38" Width="1576" Canvas.Top="-6" Canvas.ZIndex="0" Visibility="Visible"/>
+        <Rectangle Height="484" Canvas.Left="201" Stroke="#F2532D00" Canvas.Top="248" Width="1133" Canvas.ZIndex="2" Fill="#FF532D00" FocusVisualPrimaryBrush="#F2532D00" Visibility="Visible"/>
+        <Rectangle Height="447" Canvas.Left="231" Stroke="#F2532D00" Canvas.Top="256" Width="1073" Canvas.ZIndex="2" Fill="#F25E3606" FocusVisualPrimaryBrush="#F2532D00" Visibility="Visible"/>
+        <Ellipse Height="346" Canvas.Left="201" Stroke="#F2532D00" Canvas.Top="83" Width="1133" Canvas.ZIndex="1" Fill="#FF532D00" FocusVisualPrimaryBrush="#F2532D00" Visibility="Visible"/>
+        <TextBlock Canvas.Left="470" TextWrapping="Wrap" Text="Manage Account:"  Canvas.Top="138" Height="87" Width="567" Foreground="White" Canvas.ZIndex="3" FontSize="55" TextAlignment="Center"  Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="311" TextWrapping="Wrap" Text="User Name:"  Canvas.Top="323" Height="41" Width="146" Foreground="White" Canvas.ZIndex="3" FontSize="26"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="Username" Canvas.Left="448" TextWrapping="Wrap" Text="        "  Canvas.Top="326" Height="41" Width="218" Foreground="White" Canvas.ZIndex="3" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Canvas.Left="311" TextWrapping="Wrap" Text="Name:"  Canvas.Top="365" Height="41" Width="79" Foreground="White" Canvas.ZIndex="3" FontSize="26"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="Name" Canvas.Left="390" TextWrapping="Wrap" Text="        "  Canvas.Top="369" Height="41" Width="221" Foreground="White" Canvas.ZIndex="3" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Canvas.Left="311" TextWrapping="Wrap" Text="Address:"  Canvas.Top="405" Height="41" Width="107" Foreground="White" Canvas.ZIndex="3" FontSize="26"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="Address" Canvas.Left="424" TextWrapping="Wrap" Text="        "  Canvas.Top="407" Height="41" Width="221" Foreground="White" Canvas.ZIndex="3" FontSize="20"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Canvas.Left="311" TextWrapping="Wrap" Text="BirthDay:"  Canvas.Top="445" Height="41" Width="116" Foreground="White" Canvas.ZIndex="3" FontSize="26"  HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBlock Name="BirthDay" Canvas.Left="424" TextWrapping="Wrap" Text="        "  Canvas.Top="449" Height="41" Width="221" Foreground="White" Canvas.ZIndex="3" FontSize="20"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Canvas.Left="311" TextWrapping="Wrap" Text="Phone:"  Canvas.Top="490" Height="41" Width="81" Foreground="White" Canvas.ZIndex="3" FontSize="26"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="PhoneNumber" Canvas.Left="404" TextWrapping="Wrap" Text="        "  Canvas.Top="493.955" Height="41" Width="250" Foreground="White" Canvas.ZIndex="3" FontSize="20"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Canvas.Left="311" TextWrapping="Wrap" Text="Is Active:"  Canvas.Top="539" Height="41" Width="106" Foreground="White" Canvas.ZIndex="3" FontSize="26"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Name="IsActive" Canvas.Left="424" TextWrapping="Wrap" Text="        "  Canvas.Top="545" Height="41" Width="221" Foreground="White" Canvas.ZIndex="3" FontSize="20"  HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" RenderTransformOrigin="0.5,0.5"/>
+
+        <TextBlock Canvas.Left="787" TextWrapping="Wrap" Text="Rent History:"  Canvas.Top="286" Height="41" Width="248" Foreground="White" Canvas.ZIndex="3" FontSize="34" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <TextBlock Canvas.Left="713" TextWrapping="Wrap" Text="Books:"  Canvas.Top="348" Height="41" Width="108" Foreground="White" Canvas.ZIndex="3" FontSize="26" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <ListView Name="myBooks" ItemsSource="{x:Bind Books}" Canvas.ZIndex="3" Canvas.Left="713" Canvas.Top="405" Height="267" Width="264"  HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Book">
+                    <TextBlock Text="{x:Bind Title}" Width="344" Height="30"  Foreground="White" Tapped="myItem_Tapped"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock Canvas.Left="1014" TextWrapping="Wrap" Text="Journals:"  Canvas.Top="348" Height="41" Width="108" Foreground="White" Canvas.ZIndex="3" FontSize="26" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Visible"/>
+        <ListView Name="myJournal" ItemsSource="{x:Bind Journals}" Canvas.ZIndex="3" Canvas.Left="1014" Canvas.Top="405" Height="267" Width="264"  HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" >
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Journal">
+                    <TextBlock Text="{x:Bind Title}" Width="344" Height="30"  Foreground="White" Tapped="myItem_Tapped"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Name="BackPageButton" Content="Back To Menu" Background="Wheat" CornerRadius="2" Canvas.Left="317" Canvas.Top="190" Canvas.ZIndex="3" VerticalAlignment="Top" Visibility="Visible" Click="BackPageButton_Click"/>
+        <Button Name="ChangeStatusButton" Content="Active/UnActive" Background="#FF38BEBE" CornerRadius="2" Canvas.Left="318" Canvas.Top="621" Canvas.ZIndex="3" VerticalAlignment="Top" Visibility="Visible" Click="ChangeStatusButton_Click"/>
+
+    </Canvas>
+</Page>
