@@ -4,7 +4,7 @@
 * Good luck!
 
 ### Information
-* this project is about an a local library. the project should help to control the librarys services
+* this project is about an a local library. the project should help to handle the librarys services
 * i have made an a hardcoded database for this project.(ineffective, but i made it before i have learned SQL and rational databases)
 
 ### 🔍Overview🔎 
