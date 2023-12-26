@@ -33,8 +33,6 @@
     <p>Inventory page(For Member Account Only).</p>
     <img src="https://drive.google.com/uc?export=§view&id=1PIQ_ii5ZMeatoRec2KgUUAQOpzvdqInR" width="350px" /> 
     <p>Book view from inventory(For Member Account).</p> 
-    <img src="https://drive.google.com/uc?export=§view&id=1sPqrgvZSdvRFUCNgUeiiDrByRB2YHTpj" width="350px" /> 
-    <p>Book view from inventory(For Memeber Account Only).</p>
     <img src="https://drive.google.com/uc?export=§view&id=18C1Bt9TcbrPBAin4Tszi7Cex1DDDQvuL" width="350px" /> 
     <p>Edit personal details from inventory(For Memeber Account Only).</p>
     <img src="https://drive.google.com/uc?export=§view&id=1sPqrgvZSdvRFUCNgUeiiDrByRB2YHTpj" width="350px" /> 
