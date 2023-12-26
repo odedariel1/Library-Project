@@ -21,7 +21,7 @@
     <p>Adding Item to the library hall page. (For Manager Account Only)</p> 
     <img src="https://drive.google.com/uc?export=§view&id=1-ume7cy72T3TZNEkVL5gyKbJFFN7Na8y" width="350px" /> 
     <p>Editing Item Details (For Manager Account Only).</p> 
-    <img src="https://drive.google.com/uc?export=§view&id=1-1Fi0ZVKC82NPvqE7TiT3ErVwpDkI8bWX5" width="350px" /> 
+    <img src="https://drive.google.com/uc?export=§view&id=1Fi0ZVKC82NPvqE7TiT3ErVwpDkI8bWX5" width="350px" /> 
     <p>Reports Hall (For Mangaer Account only)</p> 
     <img src="https://drive.google.com/uc?export=§view&id=1kDmFFF1sU4vPjOJ41aulSuoYTdO66uSa" width="350px" /> 
     <p>Late Book View.(For Mangaer Account only)</p> 
