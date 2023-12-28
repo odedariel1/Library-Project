@@ -9,10 +9,12 @@
 
 ### 🔍Overview🔎 
 <div align="center"> 
+    <div display="flex">
     <img src="https://drive.google.com/uc?export=§view&id=10WOZoFyA11cPHe8ROGWE8iOmzfBDo3WA" width="350px" /> 
     <p>Login page.</p> 
     <img src="https://drive.google.com/uc?export=§view&id=1fmJOVtO1ihM-6mfqVoKxpH8X-0iwgKjY" width="350px" /> 
-    <p>Sign Up page.</p> 
+    <p>Sign Up page.</p>
+    </div>
     <img src="https://drive.google.com/uc?export=§view&id=1LwywHhQk_YCXtjFwXFrB1eBv-LdTvNTX" width="350px" /> 
     <p>Lobby page for Manager Account</p> 
     <img src="https://drive.google.com/uc?export=§view&id=1rzvbgr1TwKQXnfceR0JXP-iPO3uKNY8y" width="350px" /> 
