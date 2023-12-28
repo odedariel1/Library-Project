@@ -9,7 +9,7 @@
 
 ### 🔍Overview🔎 
 <div align="center"> 
-    <div style="display='flex'">
+    <div style="display:'flex'">
     <img src="https://drive.google.com/uc?export=§view&id=10WOZoFyA11cPHe8ROGWE8iOmzfBDo3WA" width="350px" /> 
     <p>Login page.</p> 
     <img src="https://drive.google.com/uc?export=§view&id=1fmJOVtO1ihM-6mfqVoKxpH8X-0iwgKjY" width="350px" /> 
